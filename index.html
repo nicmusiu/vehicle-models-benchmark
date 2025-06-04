@@ -2,23 +2,23 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="A modular and interaction-aware trajectory planning framework for multi-agent autonomous racing, combining high-level decision-making and MPC.">
-  <meta name="keywords" content="Autonomous Racing, Multi-Agent Planning, Trajectory Optimization, Model Predictive Control, Drivable Area, Overtaking Decision-Making">
+  <meta name="description" content="A benchmark of vehicle dynamics models for autonomous racing, analyzing their accuracy, limitations, and integration in MPC controllers.">
+  <meta name="keywords" content="Autonomous Racing, Vehicle Dynamics Models, Model Predictive Control, System Identification, Closed-Loop Benchmarking">
 
-  <meta property="og:title" content="Multi-Agent Planning for Autonomous Racing"/>
-  <meta property="og:description" content="A modular framework combining drivable area computation, decision-making, and MPC for robust planning in competitive autonomous racing."/>
-  <meta property="og:url" content="https://atoschi.github.io/tunnels-framework/"/>
+  <meta property="og:title" content="Benchmarking Vehicle Dynamics Models for Autonomous Racing"/>
+  <meta property="og:description" content="A deep dive into vehicle dynamics model benchmarking for autonomous racing, including open-loop and closed-loop MPC comparisons."/>
+  <meta property="og:url" content="https://atoschi.github.io/vehicle-model-benchmarking/"/>
   <meta property="og:image" content="static/images/banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-  <meta name="twitter:title" content="Multi-Agent Planning for Autonomous Racing">
-  <meta name="twitter:description" content="Interaction-aware planning and overtaking strategy for autonomous racing using modular decision-making and drivable areas.">
+  <meta name="twitter:title" content="Benchmarking Vehicle Dynamics Models for Autonomous Racing">
+  <meta name="twitter:description" content="Closed-loop MPC benchmark of vehicle models for autonomous racing with real-time testing and performance comparisons.">
   <meta name="twitter:image" content="static/images/twitter_banner.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Multi-Agent Planning</title>
+  <title>Benchmarking Vehicle Dynamics Models for Autonomous Racing</title>
   <link rel="icon" type="image/x-icon" href="static/images/racing-car.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -66,11 +66,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Modular Decision-Making and Drivable Areas for Multi-Agent Autonomous Racing</h1>
+          <h1 class="title is-1 publication-title">A Comprehensive Benchmark of Vehicle Dynamics Models for Autonomous Racing: a Deep Dive into MPC</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><a href="https://www.linkedin.com/in/alessandro-toschi-52757715b/" target="_blank">Alessandro Toschi</a>,</span>
-            <span class="author-block"><a target="_blank">Francesco Prignoli</a>,</span>
-            <span class="author-block"><a target="_blank">Marko Bertogna</a></span>
+            <span class="author-block"><a href="#" target="_blank">Nicola Musiu</a>,</span>
+            <span class="author-block"><a href="#" target="_blank">Eugenio Mascaro</a>,</span>
+            <span class="author-block"><a href="#" target="_blank">Ayoub Raji</a>,</span>
+            <span class="author-block"><a href="#" target="_blank">Alessandro De Felice</a>,</span>
+            <span class="author-block"><a href="#" target="_blank">Silvio Sorrentino</a>,</span>
+            <span class="author-block"><a href="#" target="_blank">Marko Bertogna</a></span>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">University of Modena and Reggio Emilia</span>
@@ -94,7 +97,7 @@
         </iframe>
       </div>
       <h2 class="subtitle has-text-centered">
-        AV24 Onboard - Double overtake at Las Vegas Motor Speedway during testing at CES 2025
+        AV24 Onboard – Double overtake at Las Vegas Motor Speedway during testing at CES 2025
       </h2>
     </div>
   </div>
@@ -110,7 +113,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper presents an interaction-aware, modular framework for local trajectory planning in autonomous driving, particularly suited for multi-agent racing scenarios. Our framework first identifies viable drivable areas (tunnels), taking into account predictions of other agents’ behaviors, and subsequently utilizes a high-level decision-making module to select the optimal corridor considering both static and moving vehicles. This decision-making module also strategically determines when to follow an opponent or initiate an overtaking maneuver, while ensuring compliance with racing regulations. A Model Predictive Control (MPC) module is then employed to compute an optimal, collision-free trajectory within the chosen corridor. The proposed modular architecture simplifies the computational complexity typically associated with MPC optimization, and facilitates independent component testing. Simulations and real-world tests on various racing tracks demonstrate the efficacy of our approach, even in highly dynamic interactive scenarios with multiple simultaneous opponents; ideos of these and additional experiments are available at https://atoschi.github.io/tunnels-framework/</p>
+            This paper presents a comprehensive benchmark of simplified vehicle dynamics models for autonomous racing. Focusing on control applications, the study compares common models—kinematic, dynamic single-track (linear and nonlinear), and tricycle—evaluating their physical accuracy, numerical stability, and closed-loop control performance. A high-fidelity multi-body model, validated with experimental data from a Dallara EAV24 Superformula vehicle, serves as the ground truth. Each simplified model is assessed in open-loop scenarios against the multi-body reference and integrated within a Model Predictive Control (MPC) framework in closed-loop simulations at the Yas Marina F1 circuit. Results highlight trade-offs between model fidelity and computational efficiency, providing guidelines for model selection based on application needs. A nonlinear parameter identification method using onboard sensor data is also proposed and validated.
+          </p>
         </div>
       </div>
     </div>
@@ -189,17 +193,15 @@
   });
 </script>
 
-<!-- Youtube video - Figure 8 --> 
+<!-- Youtube video – Figure 8 --> 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video of time sequence presented in the paper Figure 8</h2>
+      <h2 class="title is-3">Video of Time Sequence Presented in Figure 8</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/xHNL2yvLBUM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -209,17 +211,14 @@
 </section>
 <!-- End youtube video -->
 
-
-<!-- Youtube video - Autonoma -->
+<!-- Youtube video – Autonoma -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Autonoma simulation: different overtake scenarios at Yas Marina Circuit </h2>
+      <h2 class="title is-3">Autonoma Simulation: Different Overtake Scenarios at Yas Marina Circuit</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/uCQHHqUNmbM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -229,17 +228,14 @@
 </section>
 <!-- End youtube video -->
 
-
-<!-- Youtube video - FMU -->
+<!-- Youtube video – FMU -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Multi-Body simulation: extensive run at Yas Marina Circuit </h2>
+      <h2 class="title is-3">Multi-Body Simulation: Extensive Run at Yas Marina Circuit</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/2l8DsILx5NA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -251,5 +247,3 @@
 
 </body>
 </html>
-
-
