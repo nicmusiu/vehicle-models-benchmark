@@ -84,28 +84,7 @@
   </div>
 </section>
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="video-container">
-        <iframe width="100%" height="450" 
-          src="https://www.youtube.com/embed/I131rfeyIeg" 
-          frameborder="0" 
-          allow="autoplay; encrypted-media" 
-          allowfullscreen>
-        </iframe>
-      </div>
-      <h2 class="subtitle has-text-centered">
-        On board with Unimore Racing autonomous racecar EAV24 during testing in Yas Marina (south configuration)
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-
-<!-- Paper abstract -->
+<!-- Paper Abstract and Video -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -113,34 +92,36 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          This work aims to benchmark vehicle dynamics models com-
-monly used in autonomous racing by presenting their structures, formu-
-lations, key parameters, and simplifying assumptions. We analyze the
-applicable ranges of these models by comparing the various solutions
-proposed in the literature. Their limitations are highlighted through sim-
-ulations, including both standard and real on-track maneuvers, where
-differences in model accuracy and predictive capability are evaluated.
-Additionally, a validated methodology for parameter identification is pre-
-sented. The study also explores model linearization and numerical stabil-
-ity, both of which are particularly relevant for control applications. In the
-first part of this work, through open-loop simulations, simplified models
-are evaluated against a high-fidelity multi-body model. The evaluation
-primarily focuses on vehicle dynamics accuracy and numerical stability
-of the common integrators. In the second part, the models are integrated
-into a Model Predictive Controller (MPC) to assess their performance
-in closed-loop path-tracking for an autonomous racecar. For this step,
-real-time simulations are employed, with the multi-body model serving
-as the vehicle’s physical representation. The MPC was also validated on
-real-world scenarios, using a Dallara EAV24 Super Formula car, in the
-Yas Marina circuit during the Abu Dhabi Autonomous Racing League
-(A2RL) testing.
+            This work aims to benchmark vehicle dynamics models commonly used in autonomous racing by presenting their structures, formulations, key parameters, and simplifying assumptions. We analyze the applicable ranges of these models by comparing the various solutions proposed in the literature. Their limitations are highlighted through simulations, including both standard and real on-track maneuvers, where differences in model accuracy and predictive capability are evaluated.
+          </p>
+          <p>
+            Additionally, a validated methodology for parameter identification is presented. The study also explores model linearization and numerical stability, both of which are particularly relevant for control applications.
+          </p>
+          <p>
+            In the first part of this work, through open-loop simulations, simplified models are evaluated against a high-fidelity multi-body model. The evaluation primarily focuses on vehicle dynamics accuracy and numerical stability of the common integrators. In the second part, the models are integrated into a Model Predictive Controller (MPC) to assess their performance in closed-loop path-tracking for an autonomous racecar.
+          </p>
+          <p>
+            For this step, real-time simulations are employed, with the multi-body model serving as the vehicle’s physical representation. The MPC was also validated on real-world scenarios, using a Dallara EAV24 Super Formula car, in the Yas Marina circuit during the Abu Dhabi Autonomous Racing League (A2RL) testing.
           </p>
         </div>
+
+        <div class="video-container" style="margin-top: 2rem;">
+          <iframe width="100%" height="450" 
+            src="https://www.youtube.com/embed/I131rfeyIeg" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+          On board with Unimore Racing autonomous racecar EAV24 during testing in Yas Marina (south configuration)
+        </h2>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End Paper Abstract and Video -->
+
 
 <!-- Present model code and simulation figures -->
 <section class="section hero is-light">
@@ -164,37 +145,31 @@ Yas Marina circuit during the Abu Dhabi Autonomous Racing League
         <h2 class="title is-4 mt-6">Simulation Figures</h2>
         <div id="simulation-carousel" class="carousel">
           <div class="carousel-item has-text-centered">
-            <p class="subtitle is-5">1. Model State</p>
             <figure class="image is-3by2">
               <img src="static/images/state.png" alt="Model State">
             </figure>
           </div>
           <div class="carousel-item has-text-centered">
-            <p class="subtitle is-5">2. Model Input</p>
             <figure class="image is-3by2">
               <img src="static/images/input.png" alt="Model Input">
             </figure>
           </div>
           <div class="carousel-item has-text-centered">
-            <p class="subtitle is-5">3. Resulting Path</p>
             <figure class="image is-3by2">
               <img src="static/images/path.png" alt="Resulting Path">
             </figure>
           </div>
           <div class="carousel-item has-text-centered">
-            <p class="subtitle is-5">4. Model Dynamics – Lateral</p>
             <figure class="image is-3by2">
               <img src="static/images/lateral.png" alt="Lateral Dynamics">
             </figure>
           </div>
           <div class="carousel-item has-text-centered">
-            <p class="subtitle is-5">5. Model Dynamics – Longitudinal</p>
             <figure class="image is-3by2">
               <img src="static/images/longitudinal.png" alt="Longitudinal Dynamics">
             </figure>
           </div>
           <div class="carousel-item has-text-centered">
-            <p class="subtitle is-5">6. Axle Characteristic</p>
             <figure class="image is-3by2">
               <img src="static/images/pacejka.png" alt="Axle Characteristic">
             </figure>
