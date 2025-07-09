@@ -113,7 +113,29 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper presents a comprehensive benchmark of simplified vehicle dynamics models for autonomous racing. Focusing on control applications, the study compares common models—kinematic, dynamic single-track (linear and nonlinear), and tricycle—evaluating their physical accuracy, numerical stability, and closed-loop control performance. A high-fidelity multi-body model, validated with experimental data from a Dallara EAV24 Superformula vehicle, serves as the ground truth. Each simplified model is assessed in open-loop scenarios against the multi-body reference and integrated within a Model Predictive Control (MPC) framework in closed-loop simulations at the Yas Marina F1 circuit. Results highlight trade-offs between model fidelity and computational efficiency, providing guidelines for model selection based on application needs. A nonlinear parameter identification method using onboard sensor data is also proposed and validated.
+          This work aims to benchmark vehicle dynamics models com-
+monly used in autonomous racing by presenting their structures, formu-
+lations, key parameters, and simplifying assumptions. We analyze the
+applicable ranges of these models by comparing the various solutions
+proposed in the literature. Their limitations are highlighted through sim-
+ulations, including both standard and real on-track maneuvers, where
+differences in model accuracy and predictive capability are evaluated.
+Additionally, a validated methodology for parameter identification is pre-
+sented. The study also explores model linearization and numerical stabil-
+ity, both of which are particularly relevant for control applications. In the
+first part of this work, through open-loop simulations, simplified models
+are evaluated against a high-fidelity multi-body model. The evaluation
+primarily focuses on vehicle dynamics accuracy and numerical stability
+of the common integrators. In the second part, the models are integrated
+into a Model Predictive Controller (MPC) to assess their performance
+in closed-loop path-tracking for an autonomous racecar. For this step,
+real-time simulations are employed, with the multi-body model serving
+as the vehicle’s physical representation. The MPC was also validated on
+real-world scenarios, using a Dallara EAV24 Super Formula car, in the
+Yas Marina circuit during the Abu Dhabi Autonomous Racing League
+(A2RL) testing.
+The implementation code for all models and supplementary materials is
+publicly available at:
           </p>
         </div>
       </div>
