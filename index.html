@@ -210,72 +210,68 @@
     pagination: true
   });
 </script>
-
+Please improve the impagination:
 
 <!-- Carousel of demo videos -->
-<section class="section hero is-light">
-  <div class="container">
-    <h2 class="title is-3 has-text-centered">On Board with Unimore Racing</h2>
-    <div id="video-carousel" class="carousel">
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">On board with Unimore Racing</h2>
+      <div id="video-carousel" class="carousel">
 
-      <!-- Video 1 -->
-      <div class="carousel-item">
-        <div class="box">
-          <h3 class="subtitle is-5 has-text-centered mb-3">Best Lap – GUI Replay</h3>
-          <div class="video-wrapper mb-4">
+        <!-- Video 1 -->
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">Best Lap – GUI replay </p>
+          <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/2kl8mc2TjYM" allowfullscreen></iframe>
           </div>
-          <div class="content has-text-justified">
+          <div class="content has-text-justified" style="margin-top: 1rem;">
             <p>
               A complete lap using the autonomous controller described in the paper, performed on the full Yas Marina circuit layout.
               The recorded lap time is 1:54.0. The autonomous vehicle ran with a reduced turbo boost engine map due to high ambient temperatures, 
               resulting in lower performance compared to the multi-body simulation.
               The racing line includes a larger safety margin (2 meters) than the one used in simulation. The controller was not exploiting 
               the car’s full braking potential, as the main objective was to evaluate lateral dynamics performance. Additionally, track conditions led to front 
-              tire overheating, reducing overall grip.
+              tire overheating, resulting in an overall reduction in grip.
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Video 2 -->
-      <div class="carousel-item">
-        <div class="box">
-          <h3 class="subtitle is-5 has-text-centered mb-3">Countersteer on Turn 3 – GUI Replay</h3>
-          <div class="video-wrapper mb-4">
+        <!-- Video 2 -->
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">Countersteer on Turn 3 – GUI replay </p>
+          <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/WoZ2MMf3izw" allowfullscreen></iframe>
           </div>
-          <div class="content has-text-justified">
+          <div class="content has-text-justified" style="margin-top: 1rem;">
             <p>
               Demonstration of countersteering behavior in a high-speed corner. The controller promptly applied countersteering to recover the vehicle's sideslip angle, 
               despite model mismatches caused by unbalanced tire temperatures. This was further supported by the high frequency of the MPC, enabling steering and throttle 
-              adjustments at 100 Hz.
+              adjustments at 100 Hz 
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Video 3 -->
-      <div class="carousel-item">
-        <div class="box">
-          <h3 class="subtitle is-5 has-text-centered mb-3">Countersteer on Turn 14 – GUI Replay</h3>
-          <div class="video-wrapper mb-4">
+        <!-- Video 3 -->
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">Countersteer on Turn 14 – GUI replay </p>
+          <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/HXRN-DoedS8" allowfullscreen></iframe>
           </div>
-          <div class="content has-text-justified">
+          <div class="content has-text-justified" style="margin-top: 1rem;">
             <p>
-              Demonstration of countersteering behavior in a medium-speed corner. The vehicle initially exhibited pronounced understeer, which quickly transitioned into hazardous oversteer. 
+            Demonstration of countersteering behavior in a medium-speed corner. The vehicle initially exhibited pronounced understeer, which quickly transitioned into a hazardous oversteer. 
               This was primarily caused by an imbalance in tire temperatures between the front and rear axles. The controller responded by countersteering to recover the sideslip angle, 
               smoothly managing the unexpected dynamics.
             </p>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 </section>
-
+  
 <script>
   bulmaCarousel.attach('#video-carousel', {
     slidesToScroll: 1,
