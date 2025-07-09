@@ -213,7 +213,7 @@ Yas Marina circuit during the Abu Dhabi Autonomous Racing League
   });
 </script>
 
-<!-- Paper abstract -->
+<!-- Present model code -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -221,14 +221,81 @@ Yas Marina circuit during the Abu Dhabi Autonomous Racing League
         <h2 class="title is-3">Model Code and Simulation</h2>
         <div class="content has-text-justified">
           <p>
-          In the repository "X", model code and simulations are available for the reader.
+            The full code of vehicle models and simulation framework is available in the open-source repository: 
+            <a href="https://github.com/nicmusiu/vehicle-model-sim" target="_blank">github.com/nicmusiu/vehicle-model-sim</a>.
+            You can explore how different vehicle parameters influence dynamics, and switch between multiple model configurations 
+            to balance simulation fidelity and computational efficiency.
+          </p>
+          <p>
+            The repository will be continuously updated with new features and improvements — stay tuned!
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End model code -->
+
+<!-- Carousel of simulation figures -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Simulation Figures</h2>
+      <div id="simulation-carousel" class="carousel">
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">1. Model State</p>
+          <figure class="image is-3by2">
+            <img src="static/images/carousel1.jpg" alt="Model State">
+          </figure>
+        </div>
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">2. Model Input</p>
+          <figure class="image is-3by2">
+            <img src="static/images/carousel1.jpg" alt="Model Input">
+          </figure>
+        </div>
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">3. Resulting Path</p>
+          <figure class="image is-3by2">
+            <img src="static/images/carousel1.jpg" alt="Resulting Path">
+          </figure>
+        </div>
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">4. Model Dynamics – Lateral</p>
+          <figure class="image is-3by2">
+            <img src="static/images/carousel1.jpg" alt="Lateral Dynamics">
+          </figure>
+        </div>
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">5. Model Dynamics – Longitudinal</p>
+          <figure class="image is-3by2">
+            <img src="static/images/carousel1.jpg" alt="Longitudinal Dynamics">
+          </figure>
+        </div>
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">6. Axle Characteristic</p>
+          <figure class="image is-3by2">
+            <img src="static/images/carousel1.jpg" alt="Axle Characteristic">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+<script>
+  bulmaCarousel.attach('#simulation-carousel', {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    navigation: true,
+    pagination: true
+  });
+</script>
+<!-- Carousel of simulation figures -->
 
 <!-- Youtube video – FMU -->
 <section class="hero is-small is-light">
