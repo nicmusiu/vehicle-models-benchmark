@@ -325,7 +325,68 @@
   </div>
 </section>
 
-  
+
+<!-- Video Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">
+        On board with Unimore Racing:<br>
+        <span class="has-text-weight-normal">Edge-case on-Track</span>
+        </h2>
+
+        <!-- Carousel container -->
+        <div id="video-carousel" class="carousel" data-autoplay="false">
+          
+          <!-- Video 1: Hot Lap Simulation -->
+          <div class="carousel-item has-text-centered">
+            <p class="subtitle is-5">>Countersteer on Turn 3 – GUI replay </p>
+            <div class="video-wrapper">
+              <iframe width="100%" height="450" 
+                src="https://www.youtube.com/embed/WoZ2MMf3izw" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="content has-text-justified" style="margin-top: 1rem;">
+              <p>
+              Demonstration of countersteering behavior in a high-speed corner. The controller promptly applied countersteering to recover the vehicle's sideslip angle, 
+              despite model mismatches caused by unbalanced tire temperatures. This was further supported by the high frequency of the MPC, enabling steering and throttle 
+              adjustments at 100 Hz. 
+            </p>
+            </div>
+          </div>
+
+          <!-- Video 2: GUI Replay -->
+          <div class="carousel-item has-text-centered">
+            <p class="subtitle is-5">Countersteer on Turn 14 – GUI replay</p>
+            <div class="video-wrapper">
+              <iframe width="100%" height="450" 
+                src="https://www.youtube.com/embed/HXRN-DoedS8" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="content has-text-justified" style="margin-top: 1rem;">
+              <p>
+              Demonstration of countersteering behavior in a medium-speed corner. The vehicle initially exhibited pronounced understeer, which quickly transitioned into a hazardous oversteer. 
+              This was primarily caused by an imbalance in tire temperatures between the front and rear axles. The controller responded by countersteering to recover the sideslip angle, 
+              smoothly managing the unexpected dynamics.
+            </p>
+            </div>
+          </div>
+
+        </div> <!-- End carousel -->
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Video Section -->
+
 <!-- Carousel of demo videos -->
 <section class="hero is-small">
   <div class="hero-body">
