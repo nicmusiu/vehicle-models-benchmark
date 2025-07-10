@@ -197,40 +197,6 @@
 </section>
 <!-- End Video Section -->
 
-
-<!-- Video Section -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Hot Lap: Unimore Racing’s Autonomous Software in Action</h2>
-        <div class="video-container" style="margin-top: 1rem;">
-          <iframe width="100%" height="450" 
-            src="https://www.youtube.com/embed/dyiWNXx57Js" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-          </iframe>
-        </div>
-        <p class="has-text-justified" style="margin-top: 1.5rem;">
-          This video presents a high-speed lap performed using Unimore Racing's autonomous driving controller in a realistic simulation environment that accurately replicates tire behavior under on-track conditions. The demonstration highlights the performance of a path-tracking Model Predictive Controller (MPC) based on a single-track vehicle model. Notable insights from the simulation include:
-        </p>
-        <ul class="has-text-justified" style="margin-top: 1rem;">
-          <li><strong>Tighter cornering in high-speed sections</strong> — e.g., a lateral deviation of 50 cm in Turn 2.</li>
-          <li><strong>Wider or well-aligned paths in low-speed corners</strong> — closely matching the expected trajectory.</li>
-          <li><strong>Understeer behavior under the hotel section</strong> — a nose-out trajectory with a lateral deviation of 40 cm that transitions into a nose-in correction.</li>
-          <li><strong>Wider line through Turn 15</strong> — with a maximum lateral deviation of approximately 70 cm.</li>
-        </ul>
-        <p class="has-text-justified" style="margin-top: 1rem;">
-          These results validate the fidelity of the simulation and underline the controller’s ability to adapt to complex dynamic conditions while maintaining competitive racing performance.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Video Section -->
-
-
 <!-- Present model code and simulation figures -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -303,33 +269,10 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">On board with Unimore Racing: real-world application</h2>
+      <h2 class="title is-3">On board with Unimore Racing: Edge-Case under model mismatch</h2>
       <div id="video-carousel" class="carousel">
 
         <!-- Video 1 -->
-        <div class="carousel-item has-text-centered">
-          <p class="subtitle is-5">Best Lap – GUI replay </p>
-          <div class="video-wrapper">
-            <iframe width="100%" height="450" 
-              src="https://www.youtube.com/embed/2kl8mc2TjYM" 
-              frameborder="0" 
-              allow="autoplay; encrypted-media" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="content has-text-justified" style="margin-top: 1rem;">
-            <p>
-              A complete lap using the autonomous controller described in the paper, performed on the full Yas Marina circuit layout.
-              The recorded lap time is 1:54.0. The autonomous vehicle ran with a reduced turbo boost engine map due to high ambient temperatures, 
-              resulting in lower performance compared to the multi-body simulation.
-              The racing line includes a larger safety margin (2 meters) than the one used in simulation. The controller was not exploiting 
-              the car’s full braking potential, as the main objective was to evaluate lateral dynamics performance. Additionally, track conditions led to front 
-              tire overheating, resulting in an overall reduction in grip. Oscillations at t = 12 s are due to localization issue.
-            </p>
-          </div>
-        </div>
-
-        <!-- Video 2 -->
         <div class="carousel-item has-text-centered">
           <p class="subtitle is-5">Countersteer on Turn 3 – GUI replay </p>
           <div class="video-wrapper">
@@ -344,7 +287,7 @@
           </div>
         </div>
 
-        <!-- Video 3 -->
+        <!-- Video 2 -->
         <div class="carousel-item has-text-centered">
           <p class="subtitle is-5">Countersteer on Turn 14 – GUI replay </p>
           <div class="video-wrapper">
