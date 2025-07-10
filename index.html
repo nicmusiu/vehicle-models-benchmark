@@ -130,6 +130,61 @@
 </section>
 <!-- End Paper Abstract -->
 
+<!-- Present model code and simulation figures -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Model Code and Simulation</h2>
+        <div class="content has-text-justified">
+          <p>
+            The full code of vehicle models and simulation framework is available in the open-source repository: 
+            <strong><a href="https://github.com/nicmusiu/vehicle-model-sim" target="_blank">github.com/nicmusiu/vehicle-model-sim</a></strong>.
+            You can explore how different vehicle parameters influence dynamics, and switch between multiple model configurations 
+            to balance simulation fidelity and computational efficiency. You can test different numerical integrators to test the balance between solution accuracy and computational effort.
+          </p>
+          <p>
+            The repository will be continuously updated with new features and improvements — stay tuned!
+          </p>
+        </div>
+
+        <!-- Simulation figures carousel inside the same section -->
+        <h2 class="title is-4 mt-6">Simulation output</h2>
+        <div id="simulation-carousel" class="carousel">
+          <div class="carousel-item has-text-centered">
+            <figure class="image is-3by2">
+              <img src="static/images/state.png" alt="Model State">
+            </figure>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <figure class="image is-3by2">
+              <img src="static/images/input.png" alt="Model Input">
+            </figure>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <figure class="image is-3by2">
+              <img src="static/images/path.png" alt="Resulting Path">
+            </figure>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <figure class="image is-3by2">
+              <img src="static/images/lateral.png" alt="Lateral Dynamics">
+            </figure>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <figure class="image is-3by2">
+              <img src="static/images/longitudinal.png" alt="Longitudinal Dynamics">
+            </figure>
+          </div>
+        </div>
+        <!-- End carousel -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End model code and figures -->
+
+
 <!-- Video Section -->
 <section class="section">
   <div class="container is-max-desktop">
@@ -203,60 +258,6 @@
   </div>
 </section>
 <!-- End Video Section -->
-
-<!-- Present model code and simulation figures -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Model Code and Simulation</h2>
-        <div class="content has-text-justified">
-          <p>
-            The full code of vehicle models and simulation framework is available in the open-source repository: 
-            <strong><a href="https://github.com/nicmusiu/vehicle-model-sim" target="_blank">github.com/nicmusiu/vehicle-model-sim</a></strong>.
-            You can explore how different vehicle parameters influence dynamics, and switch between multiple model configurations 
-            to balance simulation fidelity and computational efficiency. You can test different numerical integrators to test the balance between solution accuracy and computational effort.
-          </p>
-          <p>
-            The repository will be continuously updated with new features and improvements — stay tuned!
-          </p>
-        </div>
-
-        <!-- Simulation figures carousel inside the same section -->
-        <h2 class="title is-4 mt-6">Simulation output</h2>
-        <div id="simulation-carousel" class="carousel">
-          <div class="carousel-item has-text-centered">
-            <figure class="image is-3by2">
-              <img src="static/images/state.png" alt="Model State">
-            </figure>
-          </div>
-          <div class="carousel-item has-text-centered">
-            <figure class="image is-3by2">
-              <img src="static/images/input.png" alt="Model Input">
-            </figure>
-          </div>
-          <div class="carousel-item has-text-centered">
-            <figure class="image is-3by2">
-              <img src="static/images/path.png" alt="Resulting Path">
-            </figure>
-          </div>
-          <div class="carousel-item has-text-centered">
-            <figure class="image is-3by2">
-              <img src="static/images/lateral.png" alt="Lateral Dynamics">
-            </figure>
-          </div>
-          <div class="carousel-item has-text-centered">
-            <figure class="image is-3by2">
-              <img src="static/images/longitudinal.png" alt="Longitudinal Dynamics">
-            </figure>
-          </div>
-        </div>
-        <!-- End carousel -->
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End model code and figures -->
 
 <!-- Carousel JS -->
 <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
