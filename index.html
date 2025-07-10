@@ -271,6 +271,61 @@
   });
 </script>
 
+  <!-- Carousel of demo videos -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">
+        On board with Unimore Racing:<br>
+        <span class="has-text-weight-normal">Edge-case On-Track</span>
+      </h2>
+
+      <div id="edgecase-carousel" class="carousel" data-autoplay="false">
+        
+        <!-- Video 1 -->
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">Countersteer on Turn 3 – GUI Replay</p>
+          <div class="video-wrapper">
+            <iframe width="100%" height="450" 
+              src="https://www.youtube.com/embed/WoZ2MMf3izw" 
+              frameborder="0" 
+              allow="autoplay; encrypted-media" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="content has-text-justified" style="margin-top: 1rem;">
+            <p>
+              This video captures countersteering behavior in a high-speed corner (Turn 3). The controller quickly applied corrective steering inputs to stabilize the vehicle’s sideslip angle, 
+              compensating for tire imbalance due to uneven temperature distribution. The high control frequency of the MPC (100 Hz) enabled fast and effective responses in both throttle and steering.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="carousel-item has-text-centered">
+          <p class="subtitle is-5">Countersteer on Turn 14 – GUI Replay</p>
+          <div class="video-wrapper">
+            <iframe width="100%" height="450" 
+              src="https://www.youtube.com/embed/HXRN-DoedS8" 
+              frameborder="0" 
+              allow="autoplay; encrypted-media" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="content has-text-justified" style="margin-top: 1rem;">
+            <p>
+              In this example, the vehicle encounters a dynamic shift from understeer to sudden oversteer in Turn 14, mainly due to thermal imbalance between the front and rear tires. 
+              The MPC-based controller reacted effectively by applying timely countersteering to regain lateral stability, showcasing robustness in handling unexpected on-track behavior.
+            </p>
+          </div>
+        </div>
+
+      </div> <!-- end carousel -->
+    </div>
+  </div>
+</section>
+
+  
 <!-- Carousel of demo videos -->
 <section class="hero is-small">
   <div class="hero-body">
