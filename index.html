@@ -135,6 +135,74 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+        <h2 class="title is-3">Unimore Racing’s Autonomous Driving: Simulation and On-Track Comparison</h2>
+
+        <!-- Carousel container -->
+        <div id="video-carousel" class="carousel" data-autoplay="false">
+          
+          <!-- Video 1: Hot Lap Simulation -->
+          <div class="carousel-item has-text-centered">
+            <p class="subtitle is-5">Hot Lap – Simulator Replay</p>
+            <div class="video-wrapper">
+              <iframe width="100%" height="450" 
+                src="https://www.youtube.com/embed/dyiWNXx57Js" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="content has-text-justified" style="margin-top: 1rem;">
+              <p>
+                This video presents a high-speed lap performed using Unimore Racing's autonomous driving controller in a realistic simulation environment that accurately replicates tire behavior under on-track conditions.
+                The demonstration highlights the performance of a path-tracking Model Predictive Controller (MPC) based on a single-track model. Key observations include:
+              </p>
+              <ul style="margin-top: 1rem;">
+                <li><strong>Turn 2:</strong> Lateral deviation of 50 cm (tight line).</li>
+                <li><strong>Low-speed corners:</strong> Wider or well-aligned trajectories.</li>
+                <li><strong>Under the hotel:</strong> Nose-out to nose-in transition with 40 cm deviation.</li>
+                <li><strong>Turn 15:</strong> Wider line with up to 70 cm lateral deviation.</li>
+              </ul>
+              <p style="margin-top: 1rem;">
+                These results validate the simulator's fidelity and demonstrate the controller’s capability in replicating real-world dynamics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Video 2: GUI Replay -->
+          <div class="carousel-item has-text-centered">
+            <p class="subtitle is-5">Best Lap – GUI Replay</p>
+            <div class="video-wrapper">
+              <iframe width="100%" height="450" 
+                src="https://www.youtube.com/embed/2kl8mc2TjYM" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="content has-text-justified" style="margin-top: 1rem;">
+              <p>
+                A complete lap using the autonomous controller described in the paper, performed on the full Yas Marina circuit layout. The recorded lap time is 1:54.0. The vehicle operated with a reduced turbo boost map due to high ambient temperatures, limiting engine performance relative to the simulation.
+              </p>
+              <p>
+                The racing line included a 2-meter safety margin, and braking was deliberately conservative, prioritizing lateral dynamics evaluation over time minimization. Front tire overheating reduced overall grip, and a brief oscillation at t = 12 s was caused by a localization issue.
+              </p>
+            </div>
+          </div>
+
+        </div> <!-- End carousel -->
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Video Section -->
+
+
+<!-- Video Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Hot Lap: Unimore Racing’s Autonomous Software in Action</h2>
         <div class="video-container" style="margin-top: 1rem;">
           <iframe width="100%" height="450" 
